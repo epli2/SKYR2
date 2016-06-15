@@ -19,7 +19,7 @@ class Panel extends JPanel{
         return image;
     }
     void setimage(BufferedImage newimage) {
-        image=newimage;
+        image = newimage;
         return;
     }
 
@@ -53,9 +53,9 @@ class Panel extends JPanel{
     }
 
     public void paintComponent(Graphics g) {
-        BufferedImage temp=getimage();
-        if(temp!=null){
-            g.drawImage(temp,10,10,temp.getWidth(),temp.getHeight(), this);
+        BufferedImage temp = getimage();
+        if (temp != null) {
+            g.drawImage(temp, 10, 10, temp.getWidth(), temp.getHeight(), this);
         }
     }
 }
